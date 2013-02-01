@@ -11,12 +11,7 @@
 #main .title{text-align: left;}
 #main .title{text-align: left;}
 .sbutton{
-BORDER-RIGHT: #2C59AA 1px solid; PADDING-RIGHT: 2px; BORDER-TOP:
-#2C59AA 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER:
-progid:DXImageTransform.Microsoft.Gradient(GradientType=0,
-StartColorStr=#ffffff, EndColorStr=#C3DAF5); BORDER-LEFT: #2C59AA
-1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px;
-BORDER-BOTTOM: #2C59AA 1px solid
+
 }
 </style>
 </head>
@@ -26,14 +21,14 @@ BORDER-BOTTOM: #2C59AA 1px solid
 			<div class="title">
 				&nbsp;信息同步系统
 			</div>
-			<div id="loginDiv">
+			<div id="loginDiv" >
 				<div class="title">
 					&nbsp;登录系统
 				</div>
 				<div>
 					<table border="0" cellpadding="4">
 						<tr>
-							<td align="left">帐号</td><td><input type="text" /></td><td rowspan="2" valign="middle"><input type="button" class="sbutton" value="登录"/></td>
+							<td align="left">帐号</td><td><input type="text" /></td><td rowspan="2" valign="middle"><input style="height:50px; width:50px;" type="button" class="sbutton" value="登录"/></td>
 						</tr>
 						<tr> 
 							<td align="left">密码</td><td><input type="text" /></td>
