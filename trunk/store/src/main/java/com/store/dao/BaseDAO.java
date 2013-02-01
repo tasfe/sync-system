@@ -22,6 +22,7 @@ import com.store.domain.BaseEntity;
  * @param <T>
  */
 public abstract class BaseDAO<T extends BaseEntity>{
+		
 	@Autowired
 	private JdbcTemplate jdbcTemplate; 
 	public JdbcTemplate getJdbcTemplate() {
@@ -38,9 +39,16 @@ public abstract class BaseDAO<T extends BaseEntity>{
 	 */
 	public T find(long id){
 		String sql = "select * from " + initT().tableName() + " where id = ?";
-		getJdbcTemplate().queryForObject(sql, getRowMapper(), id);
-		return null;
+		T t = getJdbcTemplate().queryForObject(sql, getRowMapper(), id);
+		return t;
 	}
+	
+	public int add(T t){
+		int result = 0;
+		return result;
+	}
+	
+	
 	/**
 	 * 条件查询
 	 * @param sql
@@ -147,4 +155,5 @@ public abstract class BaseDAO<T extends BaseEntity>{
 		};
 		return rowMapper;
 	}
+
 }

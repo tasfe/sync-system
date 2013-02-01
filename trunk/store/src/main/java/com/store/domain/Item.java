@@ -126,9 +126,14 @@ public class Item implements BaseEntity{
 
 	@Override
 	public String tableName() {		
-		return "sys_item";
+		return "syn_goods";
 	}
 
+	/**
+	 * 取得实体类的各字段setter方法以及和数据库中的列名对应
+	 * <String,Object[]>: String是数据库中表的字段名，
+	 * obj[0]预留，obj[1]是对应setter，obj[2]是接入参数数据类型，用于反射调用。
+	 */
 	@Override
 	public Map<String, Object[]> getFieldInfo() {
 		Map<String, Object[]> map = new HashMap<String, Object[]>();
@@ -137,9 +142,9 @@ public class Item implements BaseEntity{
 		map.put("price", new Object[]{price, "setPrice", int.class});
 		map.put("link", new Object[]{link, "setLink", String.class});
 		map.put("stock", new Object[] { stock, "setStock", String.class });
-		map.put("keyWord", new Object[] { keyWord, "setKeyWord", String.class });
-		map.put("shop_id", new Object[] { shop_id, "seShop_id", String.class });
-		map.put("create_at", new Object[] { create_at, "setCreate_at", int.class });
+		map.put("key", new Object[] { keyWord, "setKeyWord", String.class });
+		map.put("shop_id", new Object[] { shop_id, "setShop_id", String.class });
+		map.put("create_at", new Object[] { create_at, "setCreate_at", Date.class });
 		map.put("update_at", new Object[] { update_at, "setUpdate_at", Date.class });
 		return map;
 	}
