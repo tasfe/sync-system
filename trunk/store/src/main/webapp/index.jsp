@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=GBK" pageEncoding="GBK"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -7,7 +6,8 @@
 <title>welcome to webdemo</title>
 </head>
 <body>
-è¿™æ˜¯ä¸»é¡µ
-<a href="login.jsp">ç™»å½•</a>
+ÕâÊÇÖ÷Ò³
+<tags:test></tags:test>
+<a href="login.jsp">µÇÂ¼</a>
 </body>
 </html>
