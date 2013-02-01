@@ -35,4 +35,6 @@
 	<!-- <bean id="config" class="org.testweb.util.Config">
 		<property name="host" value="${sys.host}"/>
 	</bean> -->
+	<context:component-scan base-package="com.store.service"></context:component-scan>
+	<context:component-scan base-package="com.store.dao"></context:component-scan>
 </beans>
