@@ -14,7 +14,7 @@ public class User implements BaseEntity{
 	private long id;	
 	//登录账号
 	private String loginName;
-	private String password;	
+	private String password;
 	//显示名
 	private String userName;
 	
