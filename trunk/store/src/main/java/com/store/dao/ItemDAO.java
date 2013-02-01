@@ -22,7 +22,6 @@ public class ItemDAO extends BaseDAO<Item>{
 	}
 	
 	public Integer addItem(String sql, Item item) {
-
 		Object[] objs = {
 			item.getId(),
 			item.getStock(),
